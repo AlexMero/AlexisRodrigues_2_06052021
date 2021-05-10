@@ -1,0 +1,43 @@
+body {
+    font-family: 'Raleway', serif;
+  }
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarHeader{
+    display: flex;
+    font-size: small;
+}
+
+.divHeader{
+    padding: 30px 30px;
+
+}
+
+#logo{
+    padding-left: 20px;
+}
+
+#aNavHeader1{
+    color: #0065FC;
+}
+
+#aNavHeader2{
+    color: black;
+}
+
+#aNavHeader3{
+    color: #0065FC;
+}
+
+
+#navHeader1{
+    border-top: solid #0065FC;
+}
+a{
+    text-decoration: none;
+}
