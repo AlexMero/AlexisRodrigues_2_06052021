@@ -41,3 +41,110 @@ body {
 a{
     text-decoration: none;
 }
+
+#divBoutonRecherche{
+    display: flex;
+    padding: 12px 0px;
+    height: 40px;
+    width: auto;
+}
+
+#divIconBoutonRecherche{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+#inputBoutonRecherche{
+    text-indent: 5px;
+    border: 1px solid #f2f2f2;
+}
+
+#inputBoutonRecherche::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+#buttonBoutonRecherche{
+    width: 100px;
+    border: 0 solid;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+#divContainerFiltre{
+    display: flex;
+    align-items: center;
+}
+
+.divFiltre{
+    display: flex;
+    border-radius: 3em;
+    margin: 15px;
+    align-items: center;
+
+}
+
+#hFiltre{
+    padding: 10px 15px;
+}
+
+.divIconFiltre{
+    z-index: 10;
+    display: flex;
+    background-color: #DEEBFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 10em;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconFiltre{
+    color: #0065FC;
+}
+
+.spanFiltre{
+    font-size: small;
+    padding: 10px 25px;
+    margin-right: 10px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-left: 0px;
+    border-top-right-radius: 10em;
+    border-bottom-right-radius: 10em;
+    position: relative;
+    right: 20px;
+}
+
+.fontBold{
+    font-weight: bold;
+}
+
+.petitText{
+    font-size: small;
+}
+
+#iconInfo{
+    color: #0065FC;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#spanInfoSectionRecherche{
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+}
