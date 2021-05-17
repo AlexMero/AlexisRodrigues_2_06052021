@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', serif;
-  }
+    padding: 0px 50px;
+}
 
 
 #header{
@@ -147,4 +148,135 @@ a{
     flex-wrap: nowrap;
     display: flex;
     align-items: center;
+}
+
+#divContainerHebergementPopulaire{
+    display: flex;
+    margin-top: 20px;
+}
+
+#sectionHebergement{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #F2F2F2;
+    width: max-content;
+    border-radius: 1em;
+}
+
+#sectionPopulaire{
+    display: flex;
+}
+
+.imgResultatHebergement{
+    width: 250px;
+    height: 100px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.divResultatHebergement{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    margin: 15px 15px;
+    padding: 2px 2px;
+    border-radius: 1em;
+    border: 2px solid white;
+    width: 250px;
+}
+
+#hHebergement{
+    width: inherit;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#spanAfficherPlus{
+    margin: 20px 20px;
+}
+
+#divContainerResultatHebergement{
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.paddingSpanHebergement{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.fontSizeStar{
+    font-size: 10px;
+}
+
+.colorBleu{
+    color: #0065FC;
+}
+
+.colorGris{
+    color: #F2F2F2;
+}
+
+#sectionPopulaire{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 350px;
+    border-radius: 1em;
+    margin-left: 30px;
+}
+
+#hPopulaire{
+    
+}
+
+#divContainerResultatPopulaire{
+    display: flex;  
+    flex-flow: row wrap;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.divResultatPopulaire{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: white;
+    margin: 15px 15px;
+    padding: 2px 2px;
+    border-radius: 1em;
+    border: 2px solid white;
+    width: 300px;
+    height: 130PX;
+}
+
+.imgResultatPopulaire{
+    width: 130px;
+    height: 130px;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.paddingSpanPopulaire{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    height: 100px;
+    width: 140px;
+    padding: 15px 15px;
+}
+
+#hPopulaireContent{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
