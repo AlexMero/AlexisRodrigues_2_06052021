@@ -19,7 +19,7 @@ body {
 
 }
 
-#logo{
+#imgLogo{
     padding-left: 20px;
 }
 
@@ -231,10 +231,6 @@ a{
     margin-left: 30px;
 }
 
-#hPopulaire{
-    
-}
-
 #divContainerResultatPopulaire{
     display: flex;  
     flex-flow: row wrap;
@@ -280,3 +276,70 @@ a{
     margin-left: 20px;
     margin-top: 20px;
 }
+
+#sectionActivites{
+    display: flex;
+    flex-direction: column;
+}
+
+#hActivites{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+
+
+#divContainerResultatsActivites{
+    display: flex;
+    width: 100%;
+}
+
+.divContainerActivites{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    width: 25%;
+    border-radius: 1em;
+}
+
+.divActivite{
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divContainerImageActivites{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.imgActivites{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+
+}
+.spanResultatActivites{
+    padding: 20px 20px;
+    font-weight : bold;
+}
+
+.whiteBackMarginTen{
+    background-color: white;
+    margin: 10px;
+    border-radius: 2em;
+}
+
+.boxShadow{
+    box-shadow: 5px 10px 10px #f2f2f2;
+}
+
