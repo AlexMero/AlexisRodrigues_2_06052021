@@ -343,3 +343,17 @@ a{
     box-shadow: 5px 10px 10px #f2f2f2;
 }
 
+#footer{
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.divFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+}
