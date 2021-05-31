@@ -32,6 +32,18 @@ body {
     color: black;
 }
 
+#aNavHeader2:hover{
+    color: #0065FC;
+}
+
+#navHeader2:hover{
+    border-top: solid #0065FC;
+}
+
+#navHeader3:hover{
+    border-top: solid #0065FC;
+}
+
 #aNavHeader3{
     color: #0065FC;
 }
@@ -94,6 +106,10 @@ a{
 
 }
 
+.spanFiltre:hover{
+    background-color: #F2F2F2;
+}
+
 #hFiltre{
     padding: 10px 15px;
 }
@@ -123,6 +139,7 @@ a{
     border-bottom-right-radius: 10em;
     position: relative;
     right: 20px;
+    color: black;
 }
 
 .fontBold{
@@ -186,6 +203,7 @@ a{
     border-radius: 1em;
     border: 2px solid white;
     width: 250px;
+    color: black;
 }
 
 #hHebergement{
@@ -253,6 +271,7 @@ a{
     border: 2px solid white;
     width: 300px;
     height: 130PX;
+    color: black;
 }
 
 .imgResultatPopulaire{
@@ -306,6 +325,7 @@ a{
     border-radius: 1em;
     max-width: 330px;
     min-width: 300px;
+    color: black;
 }
 
 .divActivite{
@@ -363,4 +383,8 @@ a{
     flex-direction: column;
     width: 300px;
     height: 200px;
+}
+
+.divFooter a{
+    color: black;
 }
