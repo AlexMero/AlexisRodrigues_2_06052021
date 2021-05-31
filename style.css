@@ -7,6 +7,7 @@ body {
 #header{
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 #navbarHeader{
@@ -82,6 +83,7 @@ a{
 #divContainerFiltre{
     display: flex;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .divFiltre{
@@ -152,7 +154,8 @@ a{
 
 #divContainerHebergementPopulaire{
     display: flex;
-    margin-top: 20px;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
 }
 
 #sectionHebergement{
@@ -161,10 +164,9 @@ a{
     background-color: #F2F2F2;
     width: max-content;
     border-radius: 1em;
-}
-
-#sectionPopulaire{
-    display: flex;
+    min-width: 350px;
+    max-width: 70%;
+    margin-top: 20px;
 }
 
 .imgResultatHebergement{
@@ -228,7 +230,8 @@ a{
     background-color: #F2F2F2;
     width: 350px;
     border-radius: 1em;
-    margin-left: 30px;
+    margin-top: 20px;
+
 }
 
 #divContainerResultatPopulaire{
@@ -292,20 +295,24 @@ a{
 #divContainerResultatsActivites{
     display: flex;
     width: 100%;
+    flex-flow: row wrap;
 }
 
 .divContainerActivites{
     display: flex;
     flex-direction: column;
-    min-height: 500px;
+    min-height: 231px;
     width: 25%;
     border-radius: 1em;
+    max-width: 330px;
+    min-width: 300px;
 }
 
 .divActivite{
-    min-height: 240px;
+    min-height: 231px;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
 }
 
 .divContainerImageActivites{
@@ -348,12 +355,12 @@ a{
     background-color: #F2F2F2;
     justify-content: space-around;
     margin-top: 30px;
+    flex-flow: row wrap;
 }
 
 .divFooter{
     display: flex;
     flex-direction: column;
-    padding: 20px;
     width: 300px;
     height: 200px;
 }
