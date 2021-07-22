@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', serif;
-    padding: 0px 50px;
+    padding: 0px 10px;
 }
 
 
@@ -179,11 +179,15 @@ a{
     display: flex;
     flex-flow: row wrap;
     background-color: #F2F2F2;
-    width: max-content;
     border-radius: 1em;
-    min-width: 350px;
-    max-width: 70%;
+    width: 100%;
     margin-top: 20px;
+}
+
+@media screen AND (min-width:1000px) {
+    #sectionHebergement{
+        width: 59%;
+    }
 }
 
 .imgResultatHebergement{
@@ -246,18 +250,18 @@ a{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 350px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 1em;
     margin-top: 20px;
-
 }
 
 #divContainerResultatPopulaire{
-    display: flex;  
+    display: flex;
     flex-flow: row wrap;
-    width: auto;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .divResultatPopulaire{
@@ -269,8 +273,8 @@ a{
     padding: 2px 2px;
     border-radius: 1em;
     border: 2px solid white;
-    width: 300px;
-    height: 130PX;
+    width: 90%;
+    min-height: 130PX;
     color: black;
 }
 
@@ -286,7 +290,7 @@ a{
     flex-flow: row wrap;
     align-content: space-between;
     height: 100px;
-    width: 140px;
+    width: 100%;
     padding: 15px 15px;
 }
 
@@ -321,18 +325,22 @@ a{
     display: flex;
     flex-direction: column;
     min-height: 231px;
-    width: 25%;
+    width: 100%;
     border-radius: 1em;
-    max-width: 330px;
-    min-width: 300px;
     color: black;
+}
+
+@media screen AND (min-width:1000px) {
+    #divContainerResultatsActivites{
+        flex-flow: row nowrap;
+    }
 }
 
 .divActivite{
     min-height: 231px;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    /* min-width: 300px; */
 }
 
 .divContainerImageActivites{
@@ -375,14 +383,22 @@ a{
     background-color: #F2F2F2;
     justify-content: space-around;
     margin-top: 30px;
+    padding-left: 10px;
     flex-flow: row wrap;
+    width: 90%;
+}
+
+@media screen AND (min-width:350px) {
+    #footer{
+        width: 100%;
+    }
 }
 
 .divFooter{
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .divFooter a{
