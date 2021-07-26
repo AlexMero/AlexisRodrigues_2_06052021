@@ -1,18 +1,23 @@
 body {
     font-family: 'Raleway', serif;
-    padding: 0px 10px;
+    margin: 0px;
 }
 
-
-#header{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-}
-
-#navbarHeader{
-    display: flex;
+.navbarHeader{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "navLogo nav3" "nav1 nav2";
     font-size: small;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+.navHeaderLogo{
+    display: flex;
+    grid-area: navLogo;
 }
 
 .divHeader{
@@ -50,8 +55,36 @@ body {
 
 
 #navHeader1{
-    border-top: solid #0065FC;
+    border-bottom: solid #0065FC;
+    grid-area: nav1;
 }
+
+#navHeader2{
+    border-bottom: solid #f2f2f2;
+    grid-area: nav2;
+}
+
+#navHeader3{
+    grid-area: nav3;
+}
+
+@media screen AND (min-width:700px) {
+    .navbarHeader{
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: repeat(6, calc(100%/6));
+        grid-template-areas: "navLogo . . nav1 nav2 nav3";
+    }
+    #navHeader1{
+        border-top: solid #0065FC;
+        border-bottom: none;
+    }
+    
+    #navHeader2{
+        border-bottom: none;
+        grid-area: nav2;
+    }
+}
+
 a{
     text-decoration: none;
 }
@@ -76,6 +109,13 @@ a{
 #inputBoutonRecherche{
     text-indent: 5px;
     border: 1px solid #f2f2f2;
+    width: 70%;
+}
+
+@media screen and (min-width:700px){
+    #inputBoutonRecherche{
+        width: unset;
+    }
 }
 
 #inputBoutonRecherche::placeholder{
@@ -84,12 +124,27 @@ a{
 }
 
 #buttonBoutonRecherche{
-    width: 100px;
+    width: 50px;
     border: 0 solid;
     background-color: #0065FC;
     color: white;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
+}
+
+#buttonBoutonRecherche::after{
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free';
+}
+
+@media screen AND (min-width:700px) {
+    #buttonBoutonRecherche{
+        width: 100px;
+    }
+    #buttonBoutonRecherche::after{
+        content: "Rechercher";
+        font-family: 'Raleway', serif;
+    }
 }
 
 #divContainerFiltre{
@@ -172,21 +227,33 @@ a{
 #divContainerHebergementPopulaire{
     display: flex;
     flex-flow: row wrap-reverse;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+@media screen AND (min-width:1000px) {
+    #divContainerHebergementPopulaire{
+        justify-content: space-between;
+    }
 }
 
 #sectionHebergement{
     display: flex;
     flex-flow: row wrap;
-    background-color: #F2F2F2;
+    background-color: white;
     border-radius: 1em;
     width: 100%;
     margin-top: 20px;
 }
 
+@media screen AND (min-width:700px) {
+    #sectionHebergement{
+        background-color: #F2F2F2;
+    }
+}
+
 @media screen AND (min-width:1000px) {
     #sectionHebergement{
-        width: 59%;
+        width: 65%;
     }
 }
 
@@ -256,6 +323,13 @@ a{
     margin-top: 20px;
 }
 
+@media screen AND (min-width:1000px) {
+    #sectionPopulaire{
+        width: 32%;
+        max-width: none;
+    }
+}
+
 #divContainerResultatPopulaire{
     display: flex;
     flex-flow: row wrap;
@@ -290,7 +364,7 @@ a{
     flex-flow: row wrap;
     align-content: space-between;
     height: 100px;
-    width: 100%;
+    width: 50%;
     padding: 15px 15px;
 }
 
@@ -371,7 +445,7 @@ a{
 .whiteBackMarginTen{
     background-color: white;
     margin: 10px;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 .boxShadow{
@@ -385,12 +459,12 @@ a{
     margin-top: 30px;
     padding-left: 10px;
     flex-flow: row wrap;
-    width: 90%;
+    width: 100%;
 }
 
-@media screen AND (min-width:350px) {
+@media screen AND (min-width:700px) {
     #footer{
-        width: 100%;
+        flex-flow: row nowrap;
     }
 }
 
