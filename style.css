@@ -7,10 +7,13 @@ body {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, 50%);
-    grid-template-areas: "navLogo nav3" "nav1 nav2";
+    grid-template-areas:
+        "navLogo nav3"
+        "nav1 nav2";
     font-size: small;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 
@@ -21,8 +24,8 @@ body {
 }
 
 .divHeader{
-    padding: 30px 30px;
-
+    padding: 30px 0px;
+    text-align: center;
 }
 
 #imgLogo{
@@ -82,6 +85,14 @@ body {
     #navHeader2{
         border-bottom: none;
         grid-area: nav2;
+    }
+}
+
+@media screen AND (min-width:1000px) {
+    .navbarHeader{
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: repeat(10, calc(100%/10));
+        grid-template-areas: "navLogo . . . . . . nav1 nav2 nav3";
     }
 }
 
@@ -198,7 +209,7 @@ a{
 }
 
 .fontBold{
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .petitText{
@@ -242,12 +253,12 @@ a{
     background-color: white;
     border-radius: 1em;
     width: 100%;
-    margin-top: 20px;
 }
 
 @media screen AND (min-width:700px) {
     #sectionHebergement{
         background-color: #F2F2F2;
+        margin-top: 20px;
     }
 }
 
@@ -287,6 +298,16 @@ a{
     margin: 20px 20px;
 }
 
+@media screen AND (min-width:1000px) {
+    #hHebergement{
+        margin-left: 60px;
+    }
+    #spanAfficherPlus{
+        margin: 20px 60px;
+    }
+}
+
+
 #divContainerResultatHebergement{
     display: flex;
     flex-flow: row wrap;
@@ -319,10 +340,14 @@ a{
     background-color: #F2F2F2;
     width: 100%;
     max-width: 400px;
-    border-radius: 1em;
     margin-top: 20px;
 }
 
+@media screen AND (min-width:700px) {
+    #sectionPopulaire{
+        border-radius: 1em;
+    }
+}
 @media screen AND (min-width:1000px) {
     #sectionPopulaire{
         width: 32%;
