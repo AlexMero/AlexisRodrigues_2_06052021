@@ -269,10 +269,14 @@ a{
 }
 
 .imgResultatHebergement{
-    width: 250px;
-    height: 100px;
+    width: 100%;
+    height: 120px;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+}
+
+#divContainerResultatHebergement a{
+    width: 100%;
 }
 
 .divResultatHebergement{
@@ -284,8 +288,17 @@ a{
     padding: 2px 2px;
     border-radius: 1em;
     border: 2px solid white;
-    width: 250px;
+    width: 90%;
     color: black;
+}
+
+@media screen AND (min-width:700px) {
+    .divResultatHebergement{
+        width: 250px;
+    }
+    #divContainerResultatHebergement a{
+        width: unset;
+    }
 }
 
 #hHebergement{
@@ -361,6 +374,15 @@ a{
     width: 100%;
     align-items: center;
     justify-content: flex-start;
+}
+
+@media screen AND (min-width:2000px) {
+    #divContainerResultatPopulaire{
+        justify-content: center;
+    }
+    .divResultatPopulaire{
+        max-width: 400px;
+    }
 }
 
 .divResultatPopulaire{
