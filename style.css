@@ -45,11 +45,11 @@ body {
 }
 
 #navHeader2:hover{
-    border-top: solid #0065FC;
+    border-bottom: solid #0065FC;
 }
 
 #navHeader3:hover{
-    border-top: solid #0065FC;
+    border-bottom: solid #0065FC;
 }
 
 #aNavHeader3{
@@ -85,6 +85,16 @@ body {
     #navHeader2{
         border-bottom: none;
         grid-area: nav2;
+    }
+
+    #navHeader2:hover{
+        border-bottom: none;
+        border-top: solid #0065FC;
+    }
+    
+    #navHeader3:hover{
+        border-bottom: none;
+        border-top: solid #0065FC;
     }
 }
 
