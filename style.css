@@ -1,6 +1,20 @@
 body {
     font-family: 'Raleway', serif;
     margin: 0px;
+    max-width: 1500px;
+}
+
+@media screen AND (min-width:700px) {
+    body{
+        padding: 0px 20px;
+        width: calc(100% - 40px)
+    }
+}
+
+@media screen AND (min-width:1000px) {
+    body{
+        margin: auto;
+    }
 }
 
 .navbarHeader{
@@ -283,6 +297,7 @@ a{
     height: 120px;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+    object-fit: cover;
 }
 
 #divContainerResultatHebergement a{
@@ -414,6 +429,7 @@ a{
     height: 130px;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+    object-fit: cover;
 }
 
 .paddingSpanPopulaire{
@@ -492,6 +508,7 @@ a{
     min-height: 100%;
     min-width: 100%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
 
 }
 .spanResultatActivites{
